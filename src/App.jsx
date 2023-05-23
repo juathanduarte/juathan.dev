@@ -1,8 +1,12 @@
+import GlobalStyle from './styles/global'
+import Portfolio from './pages/Portfolio'
 
 function App() {
-
   return (
-    <h1>PORTFÓLIO</h1>
+    <>
+      <GlobalStyle />
+      <Portfolio />
+    </>
   )
 }
 
