@@ -86,51 +86,28 @@ const TitlePage = styled.h1`
     }
 `;
 
-const moveRight = keyframes`
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-`;
-
-const ScrollText = styled.div`
-  position: absolute;
-  bottom: 2rem;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-`;
-
-const ScrollTextContent = styled.span`
-  display: inline-block;
-  animation: ${moveRight} 10s linear infinite;
-`;
-
 export function Header() {
   return (
     <>
-      <Container>
-            <TagHeader>
-                <Logo>juathan.dev</Logo>
-                <Nav>
-                    <ul>
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
-                    </ul>
-                </Nav>
-            </TagHeader>
+        <Container>
+                <TagHeader>
+                    <Logo>juathan.dev</Logo>
+                    <Nav>
+                        <ul>
+                        <li>Home</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                        </ul>
+                    </Nav>
+                </TagHeader>
 
-            <TagBodyHeader>
-                <TitlePage>
-                    Olá, eu sou o <span className="text_outline">Juathan</span><span className="text_red">.</span><br />
-                    Desenvolvedor <span className="text_outline">front-end</span> & <span className="text_outline">mobile</span><span className="text_red">.</span>
-                </TitlePage>
-            </TagBodyHeader>
-      </Container>
+                <TagBodyHeader>
+                    <TitlePage>
+                        Olá, eu sou o <span className="text_outline">Juathan</span><span className="text_red">.</span><br />
+                        Desenvolvedor <span className="text_outline">front-end</span> & <span className="text_outline">mobile</span><span className="text_red">.</span>
+                    </TitlePage>
+                </TagBodyHeader>
+        </Container>
     </>
   );
 }
